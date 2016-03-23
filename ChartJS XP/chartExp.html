@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ChartJS XP</title>
+	<link rel="stylesheet" type="text/css" href="chartExp.css">
+	<link rel="stylesheet" type="text/css" href="popUpDemo2.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+	<script type="text/javascript" src="chartExp.js"></script>
+	
+</head>
+<body>
+<div class="chartsBlock">
+            <div id="data">
+                <div id="generalDataHolder">
+                    <div id="generalDataLegend" class="chartLabel">Near Miss Data</div>
+                    <div id="generalData">
+                        <div>
+                            <p class="dataVal">?</p>
+                            <p class="dataInfo">Open Data Option</p>
+                        </div>
+                        <div>
+                            <p class="dataVal">2.4 days</p>
+                            <p class="dataInfo">Rate of Completion</p>
+                        </div>
+                        <div>
+                            <p class="dataVal">34</p>
+                            <p class="dataInfo">Total Unresolved Reports</p>
+                        </div>
+                        <div>
+                            <p class="dataVal">327</p>
+                            <p class="dataInfo">Resolved Report of All Time</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="doughnutHolder">
+                    <div id="doughnutLegend"></div>
+                    <canvas id="d1" data-popup-open="popup-1"></canvas>
+                    <canvas id="d2" data-popup-open="popup-1"></canvas>
+                </div>
+            </div>
+            <div class="polarHolder">
+                <div class="polarLegend">Reports by Category</div>
+                <canvas id="polarCanvas" data-popup-open="popup-1"></canvas>
+            </div>
+            <div id="doughnutHolder2">
+                    <div id="doughnutLegend2"></div>
+                    <canvas id="d3" data-popup-open="popup-1"></canvas>
+                </div>
+</div>
+<div class="popup" data-popup="popup-1">
+    <div class="popup-inner">
+        <div class="popup-panel">
+            <div class="popup-data">
+                <h2>Data Results pop-up</h2>
+                <p id="dataResults"></p>
+            </div>
+            <div class="popup-data">
+                data 2
+            
+            </div>
+            <div class="popup-data">
+                data 3
+            </div>
+        </div>
+        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+    </div>
+</div>
+    
+</body>
+</html>
+
+        

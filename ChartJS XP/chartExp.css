@@ -1,0 +1,393 @@
+body{
+	margin:0;
+	padding: 0;
+	width:100%;
+}
+
+#Container,.Box{
+	display:-webkit-flex;     
+    display:-moz-box;
+    display:-ms-flexbox;
+	display: flex;
+	margin:0;
+	padding: 0;
+
+}
+#Container{
+	border:1px solid red;
+	flex:1;
+	height: auto;
+	flex-flow:row wrap;
+}
+.Box{
+	border: 1px solid black;
+	min-width: 400px;
+	min-height: 400px;
+}
+#Container div{
+	
+	flex:1;
+	flex-flow:column nowrap;
+
+}
+
+.SubBox{
+	border:1px solid blue;
+}
+
+.Box div{
+	margin:5px;
+	padding:0px;
+}
+
+
+/*****************/
+.NearMissForm{
+    display:-webkit-flex;     
+    display:-moz-box;
+    display:-ms-flexbox;
+    flex-flow:column nowrap;    
+    max-width:800px;
+    min-width:500px;
+    margin:5px auto;
+    padding:2px;  
+    background-color:#88badd;    
+    box-shadow: 0px 0px 2px #4C5457;
+}
+
+.NearMissHome{
+    display:-webkit-flex;     
+    display:-moz-box;
+    display:-ms-flexbox;
+    flex-flow:row wrap;
+}
+.NearMissForm, .NearMissHome, .NearMissLists div p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+}
+.NearMissLists div p{
+    font-size:14px;
+    font-weight:100;
+}
+.NearMissLists{
+    margin:3px 0px;
+    padding-right:2px;
+    box-shadow: 0px 0px 3px #4C5457;
+    height:100%;
+    width:700px;
+    max-width:700px;
+    min-width:700px;
+}
+
+.NearMissListPanel{
+    height:200px;
+    width:100%;   
+    border:1px solid #b4bec2;
+    margin:0px;
+    padding:0px;
+
+}
+
+.NearMissListPanel table{
+    overflow:hidden;
+    width:100%;
+    border-collapse:collapse;
+    font-size:12px;   
+    table-layout:fixed;
+}
+
+.NearMissListPanel table th{
+    font-weight:normal;
+    border:none;
+    color:white;
+    background-color:#88badd;  
+    font-size:14px;
+    font-weight:normal;
+    position:relative;
+
+}
+
+.ReportItem:hover{
+    background-color:#f3732a; 
+    color:white;
+}
+
+
+.NearMissListPanel tr{
+    margin:0px;
+    padding:0px;
+    border-top:1px solid #8c8c8c;
+    cursor: pointer;
+}
+.NearMissListPanel tr:first-child{
+    border:none;
+}
+.NearMissListPanel tr:last-child {
+        border-bottom:1px solid #8c8c8c;
+}
+
+.NearMissListPanel td{
+    max-width:75px;
+    min-width:60px;    
+    text-align:center;      
+}
+.NearMissButton,.RejectionButton{
+    width:100px;
+    height:25px;
+    background-color:#f3732a;
+    border:none;
+    cursor: pointer;
+}
+
+.NearMissForm div{
+    border-top:1px solid #4C5457;
+    margin:0px;
+    margin-bottom:5px;
+    padding:5px;
+    min-height:50px;
+    min-width:500px; 
+    flex:1;   
+}
+.NearMissForm div:first-child{
+    border:none;
+}
+
+.ReportStatusBlock{
+    border:none;
+    padding:0px;
+    margin:0px;
+    
+}
+
+
+.NearMissForm div p {
+    font-size:14px;
+    font-weight:600;
+    color:#4C5457;
+}
+.NearMissForm div *{
+    margin:5px 5px 5px 0px;
+
+}
+.NearMissDropList{
+    width:200px;
+    
+}
+.NearMissBigCommentBox{
+    width:80%;
+    height:75px;
+}
+
+.CalendarDatePicker{
+    display:block;
+}
+#SubmitBlock{
+    border:none;
+}
+
+.AttachmentsUploader{
+    background-color:white;
+    color:#8c8c8c;
+}
+.AttachmentList{
+    width:70%;
+}
+.AttachmentLinkButton{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px; 
+    text-decoration:none;
+    color:#0881C2;
+}
+.AttachmentLinkButton:hover{
+     color:white;
+     font-size:14px;
+}
+.RejectionButton{
+    position:relative;
+    float:right;
+    background-color:#ff1a1a;
+}
+
+
+.chartsBlock{
+    max-width:600px;
+    min-width:600px;
+    height:auto;
+    margin:0px;    
+    padding:0px;
+    
+}
+
+.chartsBlock div{
+    width:100%;
+    max-height:300px;
+    margin:5px;
+    padding:0px;
+    box-shadow: 0px 0px 3px #4C5457;   
+    
+}
+
+#data{
+    display:-webkit-flex;     
+    display:-moz-box;
+    display:-ms-flexbox;
+    flex-flow:row nowrap;
+    width:100%;
+    padding:0px;
+        
+}
+#generalDataHolder {
+    display: block;
+    max-width: 300px;
+    width: 300px;
+    max-height:300px;
+    height:300px;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: none;
+    border-right: 1px solid #cccccc;
+}
+generalDataLegend{
+    width:100%;
+    height:20px;
+    line-height:20px;
+}
+
+
+#generalData{
+    position:relative;
+    display:-webkit-flex;     
+    display:-moz-box;
+    display:-ms-flexbox;
+    flex-flow:row wrap;    
+    max-width:300px;
+    width:300px;
+    padding:0px;
+    margin:0px;
+    box-shadow:none;
+    height:auto;    
+    
+}
+#generalData div{
+    max-width:149px;
+    width:149px;
+    max-height:135px;
+    height:135px;
+    margin:0px;
+    padding:0px;
+    box-shadow:none;
+
+}
+
+#generalData div:nth-child(odd){
+    border-right:1px solid #cccccc;
+}
+#generalData div:nth-child(3),#generalData div:nth-child(4) {
+    border-top:1px solid #cccccc;
+}
+.dataVal,.dataInfo{
+   
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#4C5457;
+    font-size:12px; 
+}
+.dataVal{
+    
+    color:rgba(243, 115, 42,1);
+    font-size:24px;
+}
+
+#doughnutCanvas{
+    max-width:250px;
+    width:250px;
+    max-height:250px;
+    height:250px;    
+    margin:0px auto;
+    padding:0px;
+    
+}
+/*.NearMissLists, .chartsBlock div{
+    background-color:#E9E9E9;
+}
+
+.NearMissListPanel tr{
+    background-color:white;
+}*/
+
+.polarHolder{    
+    height:auto;    
+}
+
+.polarHolder div{
+    box-shadow:none;
+    padding:0px;
+    color:#4C5457;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:18px;
+}
+
+.polarHolder canvas{
+    width:600px;
+    max-height:280px;
+    height:280px;
+    padding-left:5px;
+    margin:0px;
+}
+
+#generalDataLegend, .polarLegend{
+    
+    box-shadow:none;
+    padding:0px;
+    color:#4C5457;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:18px;
+}
+#doughnutLegend{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     box-shadow:none;
+    padding:0px;
+    color:#4C5457;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:18px;
+}
+
+#doughnutHolder{
+    position:relative;
+    display:-webkit-flex;     
+    display:-moz-box;
+    display:-ms-flexbox;
+    flex-flow:row wrap;    
+    max-width:280px;
+    width:280px;
+    padding:0px;
+    margin:0px auto;
+    box-shadow:none;
+    height:auto;    
+    
+}
+#d1, #d2 {
+    position: absolute;
+}
+
+#d1 {
+    width:100%;
+    height:100%;
+    top: 0px;
+    left: 0px;
+}
+
+#d2 {
+    width:80%;
+    height:80%;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

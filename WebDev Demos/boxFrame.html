@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box Frame</title>
+	<link rel="stylesheet" type="text/css" href="boxFrame.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript" src="boxFrame.js"></script>
+</head>
+<body>
+	<div id="MainBody">
+		<section>Sec 1
+			<article class="boxFrame">
+				<div class="boxBody" id="box1">
+					<div class="boxHeader">
+						<span>
+							<div class="headerControl1">1</div>
+							<div class="helpControl" data-popup-open="popup-1">?</div>
+							<div class="headerControl3">X</div>
+						</span>
+					</div>
+					Box 1 body
+				</div>
+			</article>
+			<artSicle class="boxFrame">
+				<div class="boxBody" id="box2">
+					<div class="boxHeader">
+						<span>
+							<div class="helpControl" data-popup-open="popup-1">?</div>
+						</span>
+					</div>
+					Box 2 body
+				</div>
+			</article>
+		</section>
+		<section>Sec 2
+			<article class="boxFrame">
+
+				<div class="boxBody" id="box3">
+					<div class="boxHeader">
+						<span>
+							<div class="headerControl1">1</div>
+							<div class="helpControl" data-popup-open="popup-1">?</div>
+							<div class="headerControl3">X</div>
+						</span>
+					</div>
+					Box 3 body
+				</div>
+			</article> 
+		</section>
+	</div>
+	<div class="popup" data-popup="popup-1">
+		<a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+	</div>
+</body>
+</html>
