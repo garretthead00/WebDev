@@ -1,0 +1,201 @@
+*{
+	font-family: Arial, Helvetica, sans-serif;
+}
+body{
+	margin: 0;
+	padding: 0;
+	width:100%;
+}
+
+#MainBody{
+	position: absolute;
+	margin:5px;
+	padding:0;
+	display:block;
+	box-shadow: 0px 0px 2px #4C5457;
+	max-width:1000px;
+	width: 100%;
+	background-color: #f2f2f2;
+}
+#MainBody section{
+	display:-webkit-flex;
+	display:-ms-flex;
+	display:-moz-flex;
+	display: flex;
+	position: relative;
+	margin:0px 0px 25px 0px;
+	padding:0;
+	flex:1;
+	display: block;
+
+}
+
+.boxFrame, .gridFrame{
+	display:-webkit-flex;
+	display:-ms-flex;
+	display:-moz-flex;
+	display: flex;
+	margin: 5px;
+	padding: 0;
+
+
+}
+.gridFrame{
+	flex-flow:row wrap;
+}
+.gridFrame .boxBody:nth-child(2n+1) {
+    margin:5px 5px 5px 0px;
+}
+
+.gridFrame .boxBody:nth-child(2n) {
+margin:5px 0px 5px 5px;
+}
+.boxFrame{
+	flex-flow: column nowrap;
+}
+
+.boxBody{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	box-shadow: 0px 0px 2px #4C5457;
+	flex:1;
+	background-color: white;
+}
+#box2,#box3,#box4,#box5{
+	min-width: 49%;
+	max-width: 50%;
+	flex:1;
+	float:left;
+	box-shadow: 0px 0px 2px #4C5457;
+}
+
+.boxHeader{
+	position:absolute;
+	top:5px;
+	right:5px;
+}
+.boxBody{
+	margin-top: 1px;
+	max-height: 200px;
+	height:200px;
+}
+
+.boxHeader span{
+	display:-webkit-flex;
+	display:-ms-flex;
+	display:-moz-flex;
+	display: flex;
+	flex-flow:row nowrap;
+	border:none;
+}
+.boxHeader span:hover{
+	cursor: pointer;
+}
+.boxHeader div{
+	
+	margin:0;
+	padding: 0;
+	min-width: 20px;
+	max-width: 20px;
+	min-height: 20px;
+	max-height: 20px;
+	line-height: 20px;
+	flex:1;
+	font-size:18px;
+	text-align: center;
+	color:#bfbfbf;
+	z-index: 99;
+}
+/* Outer */
+.popup {
+    display:none;
+    position:fixed;
+    width:200px;
+    height: 200px;
+    box-shadow: 0px 0px 2px #4C5457;
+    background-color: white;
+}
+/* Close Button */
+.popup-close {
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:0px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%);
+    transform:translate(50%, -50%);
+    border-radius:1000px;
+    background:rgba(0,0,0,0.8);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    color:#fff;
+}
+
+.popup-close:hover {
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:rgba(0,0,0,1);
+    text-decoration:none;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+/*** Charts ***/
+
+#doughnutHolder{  
+    width:99%;
+    margin:0px auto;
+    height: 99%;
+}
+#doughnutLegend{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow:none;
+    padding:0px;
+    color:#4C5457;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+    border:1px solid red
+    width:100%;
+    z-index: 99;
+}
+#monthGoalVal, #yearGoalVal{
+	font-size:18px;
+}
+#monthGoalVal{
+	color:rgba(8, 129, 194,1);
+}
+#yearGoalVal{
+color:rgba(243, 115, 42,1);
+}
+#d1, #d2 {
+    position: absolute;
+}
+
+#d1 {
+    width:100%;
+    height:100%;
+    top: 0px;
+    left: 0px;
+}
+
+#d2 {
+    width:80%;
+    height:80%;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
