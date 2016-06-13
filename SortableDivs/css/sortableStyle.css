@@ -1,0 +1,61 @@
+*{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1em;
+}
+body{
+	margin:0;
+	padding:0;
+}
+
+#defaultMainBody{
+	display: block;
+	position: absolute;
+	border: 1px solid black;
+	margin:5px;
+	padding:0;
+	min-width: 769px;
+	max-width: 1600px;
+	width:100%;
+	height: auto;
+
+}
+
+#cardContainer{
+	display: block;
+	position: relative;
+	margin:5px auto;
+	padding: 0;
+	border: 1px solid black;
+	min-width: inherit;
+	max-width: inherit;
+	width: 99%;
+	height: auto;
+}
+
+#cardContainer .cardList{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	position: relative;
+	border:1px solid red;
+	flex-flow: row wrap;
+	list-style-type: none;
+
+}
+
+.cardList .card{
+
+	margin:5px;
+	border:1px solid black;
+
+}
+.highlight-placeholder{ 
+	min-width: 400px;
+	width:400px;
+	min-height: 250px;
+	height: 250px;
+	margin:5px;
+	background-color: rgba(255, 166, 77,0.4);
+	 }

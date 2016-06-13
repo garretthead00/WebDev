@@ -1,0 +1,97 @@
+*{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1em;
+}
+body{
+	margin:0;
+	padding:0;
+}
+
+.boxFrame{
+	display: block;
+	position: relative;
+	margin:0;
+	padding: 0;
+	border: 1px solid black;
+	min-width: 400px;
+	width:400px;
+	min-height: 250px;
+	height: 250px;
+	overflow: scroll;
+	background-color: rgba(12,153,255,0.6)
+
+}
+
+.boxHeader{
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 35px;
+
+}
+.boxIcon{
+	display: block;
+	position: absolute;
+	min-width: 30px;
+	width: 30px;
+	min-width:30px;
+	line-height: 30px;
+	min-height: 30px;
+	height: 30px;
+	text-align: center;
+
+}
+.boxIcon img{
+	min-width: 30px;
+	max-width: 30px;
+	width: 30px;
+	min-height: 30px;
+	max-height: 30px;
+	height:30px;
+	float: left;
+}
+
+.pinIcon{
+	top:2px;
+	left:2px;
+	background-image: url('../images/pinInactive.png');
+	background-size: 30px 30px;
+}
+.pinIcon:hover{
+	background-image: url('../images/pinActive.png');
+}
+.voiceIcon{
+	top:2px;
+	right:2px;
+	background-image: url('../images/voiceIconInactive.png');
+	background-size: 30px 30px;
+}
+.voiceIcon:hover{
+	background-image: url('../images/voiceIconActive.png');
+}
+
+.commentIcon{
+	top:2px;
+	left:36px;
+	background-image: url('../images/commentIconInactive.png');
+	background-size: 30px 30px;
+}
+.commentIcon:hover{
+	background-image: url('../images/commentIconActive.png');
+}
+.boxFrame p{
+	display: block;
+	position: relative;
+	margin:0px auto;
+	padding: 2px;
+	word-wrap: break-word;
+	min-width: 320px;
+	width:95%;
+	top:35px;
+	color:rgb(217,217,217);
+	padding-bottom: 25px;
+	font-size: 0.75em;
+
+}
