@@ -1,0 +1,133 @@
+*{
+	font-family: Verdana, Geneva, sans-serif;
+}
+body{
+	margin:0;
+	padding:5px;
+	background-color: #f2f2f2;
+}
+
+.cardFrame{
+	display: block;
+	position: relative;
+	margin:0;
+	padding: 5px 0;
+	border: 1px solid black;
+	min-width: 500px;
+	width:500px;
+	min-height: 250px;
+	height:auto;
+	background-color: white;
+
+}
+.cardFrame:hover .cardFooter{
+	display:block;
+}
+
+.cardHeader{
+	display: block;
+	position: absolute;
+	right:5px;
+	top:2px;
+	margin: 0;
+	padding: 0;
+	width: 30px;
+	min-height: 75px;
+	height: 75px;
+}
+.headerIcon{
+	display: block;
+	position: relative;
+	min-width: 30px;
+	width: 30px;
+	line-height: 15px;
+	min-height: 15px;
+	height: 15px;
+	text-align: center;
+
+}
+
+.cardFooter{
+	display: none;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 35px;
+	background-color: #ffffff;
+}
+.cardIcon{
+	display: block;
+	position: absolute;
+	min-width: 30px;
+	width: 30px;
+	min-width:30px;
+	line-height: 30px;
+	min-height: 30px;
+	height: 30px;
+	text-align: center;
+
+}
+
+.cardIcon img{
+	min-width: 30px;
+	max-width: 30px;
+	width: 30px;
+	min-height: 30px;
+	max-height: 30px;
+	height:30px;
+	float: left;
+}
+
+.pinIcon{
+	top:2px;
+	left:2px;
+	background-image: url('../images/pinInactive.png');
+	background-size: 30px 30px;
+}
+
+.pinIcon:hover{
+	background-image: url('../images/pinActive.png');
+}
+.upVoteIcon, .downVoteIcon{
+	top:0px;
+	background-image: url('../images/voteArrowInactive.png');
+	background-size: 30px 15px;
+	background-repeat: no-repeat;
+	z-index: 99;
+}
+.upVoteIcon:hover, .downVoteIcon:hover{
+	cursor: pointer;
+}
+.downVoteIcon{
+	transform: rotate(180deg);
+}
+
+.commentIcon{
+	top:2px;
+	left:36px;
+	background-image: url('../images/commentIconInactive.png');
+	background-size: 30px 30px;
+	transform: scaleX(-1);
+}
+.commentIcon:hover{
+	background-image: url('../images/commentIconActive.png');
+}
+.cardFrame p{
+	display: block;
+	position: relative;
+	margin:10px auto;
+	word-wrap: break-word;
+	min-width: 320px;
+	width:95%;
+}
+
+.cardSubject{
+	font-size: 25px;
+}
+.cardSubject, .cardBody{
+	color:rgba(128,128,128,0.9);
+}
+.cardReply{
+	color:rgba(102, 255, 102,0.8);
+	padding-bottom: 40px;
+}
