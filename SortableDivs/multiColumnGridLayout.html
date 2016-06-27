@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/sortableStyle.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<style>
+div#grid_container{
+
+	width:1200px;
+	margin:0px auto;
+	border:#999 1px dashed;
+}
+div#grid_container > div{
+	position:absolute;
+	width: 291px;
+	border: #000 1px solid;
+}
+div#grid_container > div:nth-child(2n+0) {
+	background: #FFDC64;
+}
+div#grid_container > div:nth-child(2n+1) {
+    background: #FEC910;
+}
+div#grid_container > div > div{ padding: 20px; font-size: 27px; color:#D9A800; }
+</style>
+
+<script>
+
+function renderGrid(){
+	var blocks = document.getElementById("grid_container").children;
+	var pad = 10, cols = 4, newleft, newtop;
+
+$('.box').each(function(){
+    var homeHeightMin = 400;
+    var homeHeightMax = 700;
+    var randHeight = Math.floor((Math.random() * homeHeightMax)+ homeHeightMin) ;
+    //$(this).css({'height':randHeight});
+    $(this).height(randHeight);
+  });
+
+	for(var i = 1; i < blocks.length; i++){
+		if (i % cols == 0) {
+			newtop = (blocks[i-cols].offsetTop + blocks[i-cols].offsetHeight) + pad;
+		    blocks[i].style.top = newtop+"px";
+		} else {
+			if(blocks[i-cols]){
+				newtop = (blocks[i-cols].offsetTop + blocks[i-cols].offsetHeight) + pad;
+				blocks[i].style.top = newtop+"px";
+			}
+			newleft = (blocks[i-1].offsetLeft + blocks[i-1].offsetWidth) + pad;
+			blocks[i].style.left = newleft+"px";	
+		}
+	}
+}
+	window.addEventListener("load", renderGrid, false);
+	window.addEventListener("resize", renderGrid, false);
+</script>
+</head> 
+<body>
+<div id="grid_container" class="sortable">
+  <div class="box"><div>1</div> </div>
+  <div class="box"><div>2</div> </div>
+  <div class="box"><div>3</div> </div>
+  <div class="box"><div>4</div> </div>
+  <div class="box"><div>5</div> </div>
+  <div class="box"><div>6</div> </div>
+  <div class="box"><div>7</div> </div>
+  <div class="box"><div>8</div> </div>
+  <div class="box"><div>9</div> </div>
+  <div class="box"><div>10</div> </div>
+  <div class="box"><div>11</div> </div>
+  <div class="box"><div>12</div> </div>
+  <div class="box"><div>13</div> </div>
+  <div class="box"><div>14</div> </div>
+  <div class="box"><div>15</div> </div>
+</div>
+</body> 
+</html>
+
